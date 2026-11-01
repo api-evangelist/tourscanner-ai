@@ -64,27 +64,42 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-TourScanner AI provides a unified Tours & Activities API, aggregating over 1,000,000 activities from 14 providers across 5,000+ cities and 8 languages. Developers can search, check live availability, and book tours via a simple REST interface, with AI‑enhanced agent capabilities and flexible MCP plans. The platform offers extensive documentation, pricing details, and guides to get started quickly.
+TourScanner AI provides a unified API that aggregates over 1,000,000 tours and activities from 14 providers, enabling developers to search, retrieve details, check live availability, and complete bookings through a single REST endpoint. The platform also offers a remote MCP server for AI‑driven conversational agents, comprehensive documentation, and an OpenAPI specification. API keys are issued on request, and the service is designed for travel apps, airlines, hotels, and other hospitality businesses seeking to enrich their offerings with instant activity data.
 
-**Areas:** Company · Tours · Activities · API · Booking
+**Areas:** Tours · Activities · Travel · Booking · API · MCP
 
 ## TourScanner AI on APIs.io
 
 Everything profiled for TourScanner AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tourscanner-ai/](https://apis.io/providers/tourscanner-ai/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (4)
 
-- [TourScanner API](https://apis.io/apis/tourscanner-ai/tourscanner-api/) — Unified Tours & Activities API providing search, live availability, and full booking lifecycle.
+- [TourScanner AI Agent API](https://apis.io/apis/tourscanner-ai/tourscanner-ai-agent-api/) — Hosted agent and MCP server
+- [TourScanner AI Availability API](https://apis.io/apis/tourscanner-ai/tourscanner-ai-availability-api/) — Live slots and prices from suppliers
+- [TourScanner AI Booking API](https://apis.io/apis/tourscanner-ai/tourscanner-ai-booking-api/) — Hold, confirm, status, cancel, amend
+- [TourScanner AI Search API](https://apis.io/apis/tourscanner-ai/tourscanner-ai-search-api/) — Destinations and activity catalog
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Tourscanner Ai Agentic Access](https://apis.io/agentic-access/tourscanner-ai/tourscanner-ai-agentic-access/)
 
 #### JSON-LD (1)
 
 Linked-data contexts for the provider's vocabulary.
 
 - [Tourscanner Ai Context](https://apis.io/jsonld/tourscanner-ai/tourscanner-ai-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Tourscanner Ai Openapi Overlay](https://apis.io/overlays/tourscanner-ai/tourscanner-ai-openapi-overlay/)
 
 #### Governance rules (1)
 
@@ -99,45 +114,56 @@ Authentication, trust centre, and vulnerability disclosure.
 - [Tourscanner Ai Authentication](https://apis.io/security/tourscanner-ai/tourscanner-ai-authentication/)
 - [Tourscanner Ai Domain Security](https://apis.io/security/tourscanner-ai/tourscanner-ai-domain-security/)
 
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Tourscanner Ai Plans Pricing](https://apis.io/plans/tourscanner-ai/tourscanner-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Tourscanner Ai Rate Limits](https://apis.io/rate-limits/tourscanner-ai/tourscanner-ai-rate-limits/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://tourscanner.ai)
 - [Documentation](https://tourscanner.ai/docs)
-- [Getting started](https://tourscanner.ai/get-started)
-- [API reference](https://tourscanner.ai/api)
+- [Getting started](https://tourscanner.ai/guides)
+- [API reference](https://tourscanner.ai/openapi.json)
 - [Pricing](https://tourscanner.ai/pricing)
-- [Support](https://tourscanner.ai/support)
 - [Terms of service](https://tourscanner.ai/terms)
 - [Privacy policy](https://tourscanner.ai/privacy)
 
 ## API Evangelist rating
 
-**Kin Score 34.9** — thin · rubric 0.24.0 · scored 2026-10-29
+**Kin Score 44.4** — developing · rubric 0.25.0 · scored 2026-10-29
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
-| Contract quality | 6.7 |
+| Discoverability | 65.0 |
+| Contract quality | 49.0 |
 | Contract governance | 70.9 |
 | Operational transparency | 0.0 |
-| Developer ergonomics | 51.7 |
+| Developer ergonomics | 46.9 |
 | Access clarity | 31.6 |
 
-**Agent readiness 10.4** — agent-aware
+**Agent readiness 41.4** — agent-native
 
 | Agent-readiness dimension | Result |
 |---|---|
-| Spec Presence | — |
-| Agentic Access | — |
+| Spec Presence | yes |
+| Agentic Access | unknown |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | bearer (partial credit) |
-| Idempotency | derived (partial credit) |
-| Error Semantics | derived (partial credit) |
+| Idempotency | verified |
+| Error Semantics | documented (partial credit) |
 | OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
 | Agent Skills | unknown |
 | Well Known Catalog | — |
@@ -148,6 +174,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
 
 **Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
 
